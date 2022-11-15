@@ -34,8 +34,8 @@ public class projectController {
         
         String blob = Base64.encodeBase64String(file.getBytes());
         
-        return "Name    : " +text +
+        return " <Fieldset>ID Card <br><hr>"+ "Name    : " +text +
                 "<br> Born   : "+ newTanggal +
-                "<br>Photo : <img width=100 src='data:image/jpeg;base64, "+blob+" '/></img><br>";
+                "<br>Photo : <img width=100 src='data:image/jpeg;base64, "+blob+" '/></img><br></Fieldset>";
     }
 }
